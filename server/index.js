@@ -7,7 +7,7 @@ wss.on("connection", ws => {
 
     ws.on("message", message => {
         //console.log(`Client has sent us: ${message}`);
-        ws.send(message.toString());
+        ws.send(message);
     })
 
     ws.on("close", () => {
